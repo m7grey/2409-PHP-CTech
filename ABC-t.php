@@ -22,7 +22,6 @@
         $range++;
     }
 
-
     $mark = isset($_GET["mark"]);
     if ($mark) {
         $mark = $_GET["mark"];
