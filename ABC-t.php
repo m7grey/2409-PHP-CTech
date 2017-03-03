@@ -44,6 +44,10 @@
         if ($mark == $letter) {
             $highLight = "markCell";
         }
+        elseif ($display == "L"){
+            $letter = chr($i + 97);
+            $letter_low = chr($i + 65);
+        }
 
         echo "<div class='abc  $highLight'>$letter<sub class='other'>$letter_low</sub> </div>";
     }
