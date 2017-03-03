@@ -58,6 +58,11 @@
             $letter = chr($i + 97);
             $letter_low = chr($i + 65);
         }
+//        display=U
+        if ($display == "U") {
+            $letter = chr($i + 65);
+            $letter_low = chr($i + 97);
+        }
 //        v_check('A', 'E', 'I', 'O', 'U');
         if ($vowel == "Y" && $letter == 'A') {
             $highLight = "vowel";
@@ -71,20 +76,20 @@
             $highLight = "vowel";
         } else ($vowel == "Y"){
         $highLight = ""};
-//      vowel=N
-        if ($vowel == "N" && $letter == 'A') {
-            $highLight = "";
-        } elseif ($vowel == "N" && $letter == 'E') {
-            $highLight = "";
-        } elseif ($vowel == "N" && $letter == 'I') {
-            $highLight = "";
-        } elseif ($vowel == "N" && $letter == 'O') {
-            $highLight = "";
-        } elseif ($vowel == "N" && $letter == 'U') {
-            $highLight = "";
-        } else ($vowel == "N"){
-        $highLight = "consonant"};
-//        vowel=B
+//////      vowel=N
+            if ($vowel == "N" && $letter == 'A') {
+                $highLight = "";
+            } elseif ($vowel == "N" && $letter == 'E') {
+                $highLight = "";
+            } elseif ($vowel == "N" && $letter == 'I') {
+                $highLight = "";
+            } elseif ($vowel == "N" && $letter == 'O') {
+                $highLight = "";
+            } elseif ($vowel == "N" && $letter == 'U') {
+                $highLight = "";
+            } else ($vowel == "N"){
+            $highLight = "consonant"};
+////        vowel=B
         if ($vowel == "B" && $letter == 'A') {
             $highLight = "vowel";
         } elseif ($vowel == "B" && $letter == 'E') {
@@ -97,7 +102,7 @@
             $highLight = "vowel";
         } else ($vowel == "B"){
         $highLight = "consonant"};
-////
+//////
 //       else($vowel == "N" && $letter != array('A', 'E', 'I', 'O', 'U')){
 //           $highLight = "consonant"};
 //
