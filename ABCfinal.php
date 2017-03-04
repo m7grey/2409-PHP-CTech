@@ -22,17 +22,7 @@
         $range++;
     }
 
-    function getOption($key, $default) {
-        $value = isset($_GET[$key]);
-        if ($value) {
-            $value = $_GET[$key];
-        }
-        else {
-            $value = $default;
-        }
-        return $value;
-    }
-
+include "function-library.php";
     $mark = getOption("mark","");
     $vowel = getOption("vowel","");
 
