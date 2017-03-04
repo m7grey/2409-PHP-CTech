@@ -39,8 +39,8 @@
             $vowelClass = "vowel";
         }
 
-        elseif(!isVowel($letter) == true &&
-            ($vowel =="N" || $vowel == "B"))
+        elseif(!isVowel($letter) == true
+            && ($vowel =="N" || $vowel == "B"))
             {
             $vowelClass = "consonant";
         }
