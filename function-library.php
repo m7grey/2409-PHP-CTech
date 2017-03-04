@@ -10,4 +10,7 @@ function getOption($key, $default)
     }
     return $value;
 }
+function isVowel ($input){
+    return true;
+}
 ?>

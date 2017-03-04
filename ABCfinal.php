@@ -19,7 +19,7 @@
 
     $range = getOption("abccount","27");
     $mark = getOption("mark","");
-    $vowel = getOption("vowel","");
+    $vowel = getOption("vowel","Y");
 
 
     for ($i = 0; $i < $range - 1; $i++) {
