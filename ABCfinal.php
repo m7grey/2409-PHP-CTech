@@ -32,15 +32,25 @@
         $mark = "";
     }
 
+    $vowel = isset($_GET["vowel"]);
+    if ($vowel) {
+        $vowel = $_GET["vowel"];
+    }
+
+    else {
+        $vowel = "";
+    }
+
     for ($i = 0; $i < $range - 1; $i++) {
         $letter = chr($i + 65);
         $highLight = "";
-        $lower = strolower($letter);
+
+        $lower = strtolower($letter);
 
         if ($mark == $letter) {
             $highLight = "markCell";
         }
-        echo "<div class='abc  $highLight'>$letter<sub class='other'>$i</sub> </div>";
+        echo "<div class='abc  $highLight'>$letter<sub class='other'>$letter</sub> </div>";
     }
     ?>
 </div>
