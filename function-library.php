@@ -13,15 +13,20 @@ function getOption($key, $default)
 
 function isVowel($input)
 {
+    $status = false;
     switch ($input) {
         case "A":
         case "E":
         case "I":
         case "O":
         case "U":
+        case "Y":
+
+            $status = true;
+            break;
     }
 
-    return true;
+    return $status;
 }
 
 ?>
