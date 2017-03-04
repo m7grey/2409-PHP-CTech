@@ -38,7 +38,7 @@
     }
 
     else {
-        $vowel = "";
+        $vowel = "Y";
     }
 
     for ($i = 0; $i < $range - 1; $i++) {
@@ -50,7 +50,7 @@
         if ($mark == $letter) {
             $highLight = "markCell";
         }
-        echo "<div class='abc  $highLight'>$letter<sub class='other'>$letter</sub> </div>";
+        echo "<div class='abc  $highLight'>$letter<sub class='other'>$lower</sub> </div>";
     }
     ?>
 </div>
