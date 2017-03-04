@@ -2,7 +2,7 @@
 <head>
     <title>06.example.php</title>
     <link rel="stylesheet" href="ABC.css">
-    <link rel="stylesheet" href="abc-addon.css">
+    <link rel="stylesheet" href="abc-add.css">
     <style>
         .markCell {
             background-color: antiquewhite;
@@ -31,7 +31,12 @@
         if ($mark == $letter) {
             $highLight = "markCell";
         }
-        echo "<div class='abc  $highLight'>$letter<sub class='other'>$lower</sub> </div>";
+        $vowelClass = "";
+        if(isVowel($letter) == true){
+            $vowelClass = "vowel";
+        }
+
+        echo "<div class='abc  $highLight $vowelClass'>$letter<sub class='other'>$lower</sub> </div>";
     }
     ?>
 </div>
