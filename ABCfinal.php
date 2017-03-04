@@ -33,23 +33,11 @@
         return $key;
     }
 
-    $mark = isset($_GET["mark"]);
-    if ($mark) {
-        $mark = $_GET["mark"];
-    }
+    $mark = getOption("mark","");
 
-    else {
-        $mark = "";
-    }
 
-    $vowel = isset($_GET["vowel"]);
-    if ($vowel) {
-        $vowel = $_GET["vowel"];
-    }
+    $vowel = getOption("vowel","");
 
-    else {
-        $vowel = "Y";
-    }
 
     for ($i = 0; $i < $range - 1; $i++) {
         $letter = chr($i + 65);
