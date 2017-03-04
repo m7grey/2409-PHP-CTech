@@ -22,6 +22,16 @@
         $range++;
     }
 
+    function getOption($key, $default) {
+        $key = isset($_GET[$key]);
+        if ($key) {
+            $key = $_GET[$key];
+        }
+        else {
+            $key = $default;
+        }
+        return $key;
+    }
 
     $mark = isset($_GET["mark"]);
     if ($mark) {
