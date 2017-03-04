@@ -23,19 +23,17 @@
     }
 
     function getOption($key, $default) {
-        $key = isset($_GET[$key]);
-        if ($key) {
-            $key = $_GET[$key];
+        $value = isset($_GET[$key]);
+        if ($value) {
+            $value = $_GET[$key];
         }
         else {
-            $key = $default;
+            $value = $default;
         }
-        return $key;
+        return $value;
     }
 
     $mark = getOption("mark","");
-
-
     $vowel = getOption("vowel","");
 
 
