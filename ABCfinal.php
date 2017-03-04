@@ -32,12 +32,20 @@
             $highLight = "markCell";
         }
         $vowelClass = "";
-        if(isVowel($letter) == true && $vowel =="Y"){
+
+        if(isVowel($letter) == true && $vowel =="Y")
+            {
             $vowelClass = "vowel";
         }
 
         elseif(!isVowel($letter) == true && $vowel =="N"){
             $vowelClass = "consonant";
+        }
+        if (isVowel($letter) == true  && $vowel =="B") {
+            $vowelClass = "vowel";
+        }
+       elseif (!isVowel($letter) == true && $vowel =="B") {
+        $vowelClass = "consonant";
         }
 
         echo "<div class='abc  $highLight $vowelClass'>$letter<sub class='other'>$lower</sub> </div>";
