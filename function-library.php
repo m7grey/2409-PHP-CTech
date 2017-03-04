@@ -10,7 +10,18 @@ function getOption($key, $default)
     }
     return $value;
 }
-function isVowel ($input){
+
+function isVowel($input)
+{
+    switch ($input) {
+        case "A":
+        case "E":
+        case "I":
+        case "O":
+        case "U":
+    }
+
     return true;
 }
+
 ?>
