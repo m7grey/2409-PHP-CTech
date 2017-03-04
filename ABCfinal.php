@@ -15,14 +15,9 @@
 <div class='divBody'>
     <h1>ABC Counter</h1>
     <?php
-    $range = 27;
-    $x = isset($_GET["abccount"]);
-    if ($x) {
-        $range = $_GET["abccount"];
-        $range++;
-    }
+    include "function-library.php";
 
-include "function-library.php";
+    $range = getOption("abccount","27");
     $mark = getOption("mark","");
     $vowel = getOption("vowel","");
 

@@ -10,4 +10,4 @@ function getOption($key, $default)
     }
     return $value;
 }
-    ?>
+?>
